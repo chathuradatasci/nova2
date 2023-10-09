@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000000;
+  color: #FFF;
+  margin: 0;
+  padding: 0;
+}
+
+#home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /*background-image: url(images/avatar.png);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: center;*/
+}
+
+.rec1 {
+  width: 493.26px;
+  height: 574.09px;
+  left: 800.78px;
+  top: 0px;
+  position: absolute;
+  transform: rotate(55.15deg);
+  transform-origin: 0 0;
+  background: #04E4FF;
+  box-shadow: 572.2599487304688px 572.2599487304688px 572.2599487304688px;
+  border-radius: 1120.23px;
+  filter: blur(150px);
+  z-index: 1; 
+}
+.rec2{
+  width: 283.76px; 
+  height: 258.38px; 
+  left: 175.43px; 
+  top: 325.52px; 
+  position: absolute; 
+  transform: rotate(27.97deg); 
+  transform-origin: 0 0; 
+  background: #FF28DC; 
+  box-shadow: 541.9112548828125px 541.9112548828125px 541.9112548828125px; 
+  border-radius: 1120.23px; 
+  filter: blur(80px)
+}
+.rec3{
+  width: 283.76px; 
+  height: 258.38px; 
+  left: 1050px; 
+  top: 325.52px; 
+  position: absolute; 
+  transform: rotate(27.97deg); 
+  transform-origin: 0 0; 
+  background: #FF28DC; 
+  box-shadow: 541.9112548828125px 541.9112548828125px 541.9112548828125px; 
+  border-radius: 1000.23px; 
+  filter: blur(80px)
+}
+.rec4 {
+  width: 250px;
+  height: 260px;
+  left: 800.78px;
+  top: 0px;
+  margin-top: 120px;
+  position: absolute;
+  transform: rotate(55.15deg);
+  transform-origin: 0 0;
+  background: #F7DE3F; 
+  box-shadow: 572.2599487304688px 572.2599487304688px 572.2599487304688px;
+  border-radius: 1120.23px;
+  filter: blur(70px);
+  z-index: 5; 
+}
+.lined{
+  width: 1080px; 
+  height: 1080px; 
+  left: 120px; 
+  top: -496px; 
+  position: absolute; 
+  box-shadow: 12px 12px 12px; 
+  border-radius: 9999px; 
+  border: 1.5px white solid; 
+  filter: blur(12px)
+}
+.blurred{
+  width: 1080px;
+  height: 1080px; 
+  left: 120px; 
+  top: -496px; 
+  position: absolute; 
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9999px; 
+  border: 3px white solid
+}
+.image{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 15;
+}
+.avatar{
+  width: 622px;
+  height: 550px;
+  object-fit: cover;
+}
+.novva {
+  margin-top: 50px;
+  font-size: 100px;
+  font-weight: lighter;
+  text-align: center;
+  color: #FFF;
+  position: relative; /* Add relative positioning to keep it in the document flow */
+  z-index: 10; /* Place the text on top of rec1 */
+}
+
+
+@media (max-width: 400px) {
+  .rec1 {
+    width: 200px;
+    height: 150px;
+    left: 300px;
+    filter: blur(75px)
+  }
+  .rec3 {
+    width: 200px;
+    height: 150px;
+    left: 100px;
+    margin-top: -300px;
+    filter: blur(75px)
+  }
+  .novva {
+    font-size: 50px;
+  }
+  .avatar {
+    margin-top: -100px;
+    width: 522px;
+    height: 450px;
+    object-fit: cover;
+  }
+  .rec4{
+    width: 200px;
+    height: 150px;
+    top: 120px;
+    left: 200px;
+    filter: blur(50px)
+  }
+  .lined{
+    width: 100px; 
+    height: 100px; 
+    left: -40px; 
+    top: -150px;
+  }
+  .blurred{
+    width:0px; 
+    height: 0px; 
+    left: -40px; 
+    top: -150px; 
+  }
+}
